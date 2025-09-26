@@ -1,0 +1,33 @@
+body {
+    background-color: #3182BD;
+    color: #DEEBF7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#img {
+    height: 200px;
+    width: 200px;
+}
+b{
+    color: #9ECAE1;
+}
+li span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #9ECAE1;
+}
+footer>p{
+    font-size: 2rem;
+    color: #9ECAE1;
+}
+
+div ol li a:active {
+    text-decoration: none;
+}
+
+div ol li a:visited {
+    color: #9ECAE1;
+}
+div ol li a:hover {
+    font-size: 16px;
+    color: #DEEBF7;
+}
