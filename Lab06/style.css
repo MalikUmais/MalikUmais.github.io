@@ -1,0 +1,156 @@
+:root {
+    --bgColor: #0E3651;
+    --textColor: #DEEBF7;
+    --boldColor: #9ECAE1;
+    --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --cardColor:#0f2f44;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    font-family: var(--font);
+}
+
+.nav {
+    background-color: #1a4b6b;
+    height: 80px;
+    padding: 0px 40px 10px 0px;
+    box-shadow: 8px 11px 20px #011929;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navOptns {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline var(--textColor) 3px;
+}
+
+#img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+b {
+    color: var(--boldColor);
+}
+
+.floating-text{
+    position: relative;
+    float: right;
+    right: 10px;
+}   
+li span {
+    font-family: var(--font);
+    color: var(--boldColor);
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+}
+.cardContainer a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    background-color: var(--cardColor);
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 8px 11px 20px #011929;
+}
+.card:hover{
+    box-shadow: 8px 11px 20px #010e16;
+}
+.projImg{
+    width: 200px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+footer>p {
+    font-size: 2rem;
+    color: var(--boldColor);
+    margin: 30px 0px 50px 50px;
+}
+a{
+    color: var(--boldColor);
+}
+div ol li a:active {
+    text-decoration: none;
+}
+
+div ol li a:visited {
+    color: var(--boldColor);
+}
+
+div ol li a:hover {
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+div>p {
+    margin-left: 25px;
+}
+
+.textStyle {
+    max-width: 350px;
+    max-height: 70px;
+    overflow: auto;
+}
+
+.navOptns a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+div {
+    margin: 30px 0px 50px 50px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+
+table {
+    margin: auto;
+    border: solid 1px var(--boldColor);
+    border-collapse: collapse;
+    background-color: #0f3752;
+    box-shadow: 18px 21px 30px #011929;
+}
+
+td,
+th {
+    border: solid 1px var(--boldColor);
+    padding: 10px;
+}
+
+th {
+    color: var(--boldColor)
+}
+
+td {
+    color: var(--textColor);
+}
+.table-title{
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: var(--cardColor);
+}
