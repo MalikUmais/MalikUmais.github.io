@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h2>Job Application Form</h2>
+
+    <form action="#" method="get">
+      <legend>Personal Information</legend>
+      <label for="fullname">Full Name:</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        required
+        maxlength="50"
+        placeholder="Enter your full name"
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@email.com"
+        required
+      />
+      <br />
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="e.g. 0300-1234567"
+        required
+      />
+      <br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br />
+
+      <legend>Job Details</legend>
+      <label for="position">Position Applying For:</label>
+      <select id="position" name="position" required>
+        <option value="">-- Select a Role --</option>
+        <option value="frontend">Frontend Developer</option>
+        <option value="backend">Backend Developer</option>
+        <option value="fullstack">Full Stack Developer</option>
+        <option value="uiux">UI/UX Designer</option>
+      </select>
+      <br />
+
+      <label>Preferred Job Type:</label><br />
+      <input type="radio" id="remote" name="jobtype" value="remote" checked />
+      <label for="remote">Remote</label>
+      <input type="radio" id="onsite" name="jobtype" value="onsite" />
+      <label for="onsite">On-site</label>
+      <br />
+      <label for="experience">Years of Experience:</label>
+      <input
+        type="number"
+        id="experience"
+        name="experience"
+        min="1"
+        max="30"
+        placeholder="e.g. 2"
+        required
+      />
+      <br />
+
+      <legend>Additional Information</legend>
+      <label for="skills">Technical Skills:</label><br />
+      <input type="checkbox" id="html" name="skills" value="HTML" />
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="CSS" />
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript" />
+      <label for="js">JavaScript</label>
+      <input type="checkbox" id="react" name="skills" value="React" />
+      <label for="react">React</label>
+      <input type="checkbox" id="dotnet" name="skills" value=".NET" />
+      <label for="dotnet">.NET</label>
+      <br />
+
+      <legend>Nationality</legend>
+      <input type="radio" id="pakistan" name="nationality" value="pakistan" />
+      <label for="pakistan">Pakistan</label>
+      <input type="radio" id="foreign" name="nationality" value="foreign" />
+      <label for="foreign">Foreign</label>
+      <br />
+
+      <button type="submit">Submit Application</button>
+      <button type="reset">Reset Form</button>
+    </form>
+
+  <script src="form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      div {
+        margin-left: 200px;
+        height: 600px;
+        width: 600px;
+      }
+
+      img.lazy {
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div><img data-src="1.png" data-alt="img1" class="lazy" /></div>
+    <div><img data-src="2.png" data-alt="img2" class="lazy" /></div>
+    <div><img data-src="3.png" data-alt="img3" class="lazy" /></div>
+    <div><img data-src="4.png" data-alt="img4" class="lazy" /></div>
+    <div><img data-src="5.png" data-alt="img5" class="lazy" /></div>
+    
+    <script>
+      function lazyLoad() {
+        const images = document.querySelectorAll(".lazy");
+        const windowBottom = window.innerHeight + window.pageYOffset;
+
+        images.forEach((img) => {
+          if (img.offsetTop < windowBottom) {
+            img.src = img.dataset.src;
+            img.classList.remove("lazy");
+          }
+        });
+      }
+
+      document.addEventListener("scroll", lazyLoad);
+      window.addEventListener("resize", lazyLoad);
+      window.addEventListener("orientationchange", lazyLoad);
+
+      lazyLoad();
+    </script>
+  </body>
+</html>
